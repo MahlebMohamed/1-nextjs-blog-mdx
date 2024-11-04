@@ -1,0 +1,19 @@
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+# Exemple d'affichage d'algorithme en pseudo-code
+
+Voici un exemple d'algorithme en pseudo-code affiché avec un style "éditeur de texte" :
+
+<SyntaxHighlighter language="plaintext" style={dracula}>
+  {`
+Algorithme Carre
+Var X, X2 : reel
+Début
+    Ecrire('Donner un reel')
+    Lire(X)
+    X2 ← X * X
+    Ecrire('Le carré de ', X, ' est: ', X2)
+Fin
+`}
+</SyntaxHighlighter>
